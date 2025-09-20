@@ -3,137 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sharia DeFi - Launching Soon</title>
+  <title>Sharia DeFi - Coming Soon</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f172a; /* Dark background */
-      color: #f8fafc; /* Light text */
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      background: linear-gradient(-45deg, #0f172a, #162447, #00a884, #d4af37);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #fff;
       text-align: center;
     }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     .container {
       max-width: 800px;
-      padding: 30px;
+      padding: 40px;
+      background: rgba(15, 23, 42, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
+      backdrop-filter: blur(10px);
     }
+
     .logo {
-      max-width: 180px;
+      max-width: 200px;
       margin: 0 auto 20px;
+      animation: float 3s ease-in-out infinite;
     }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
     h1 {
-      font-size: 42px;
+      font-size: 54px;
       margin-bottom: 15px;
-      background: linear-gradient(90deg, #d4af37, #00a884); /* Gold + Green gradient */
+      background: linear-gradient(90deg, #d4af37, #00a884);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
     }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #d4af37; }
+      to { text-shadow: 0 0 20px #00a884; }
+    }
+
     p {
-      font-size: 18px;
-      margin-bottom: 25px;
+      font-size: 20px;
+      margin-bottom: 30px;
       line-height: 1.6;
-      color: #cbd5e1;
+      color: #f8fafc;
     }
-    ul {
-      text-align: left;
-      margin: 20px auto;
-      padding: 0;
-      list-style-type: none;
-      max-width: 500px;
-    }
-    li {
-      margin-bottom: 12px;
-      font-size: 16px;
-    }
-    li::before {
-      content: "✔️";
-      margin-right: 10px;
-      color: #d4af37;
-    }
-    form {
-      margin: 25px 0;
-    }
-    input[type="email"] {
-      padding: 12px;
-      width: 65%;
-      border: none;
-      border-radius: 8px 0 0 8px;
-      outline: none;
-      font-size: 16px;
-    }
-    button {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 0 8px 8px 0;
-      background-color: #d4af37;
-      color: #0f172a;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #b8912f;
-    }
+
     .demo-btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 12px 28px;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #00a884, #d4af37);
+      padding: 16px 40px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #d4af37, #00a884);
       color: #0f172a;
       font-weight: bold;
       text-decoration: none;
-      font-size: 16px;
-      transition: opacity 0.3s ease;
+      font-size: 20px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
+
     .demo-btn:hover {
-      opacity: 0.9;
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
     }
-    .social {
-      margin-top: 30px;
-    }
-    .social a {
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-    .social a:hover {
-      color: #00a884;
-    }
+
     .footer {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 14px;
-      color: #64748b;
+      color: #cbd5e1;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="shariadefi-transperant-logo.png" alt="Sharia DeFi Logo" class="logo"/>
-    <h1>Sharia DeFi</h1>
-    <p>Launching soon! The first Shariah-compliant platform to help you navigate decentralized finance ethically and confidently.</p>
-    <ul>
-      <li>Real-time Shariah compliance scoring for DeFi protocols</li>
-      <li>Expert verification by Islamic finance scholars</li>
-      <li>Comprehensive halal and interest-free checks</li>
-      <li>Transparent risk assessment and historical tracking</li>
-    </ul>
-    <form action="#">
-      <input type="email" placeholder="Enter your email to get updates" required>
-      <button type="submit">Notify Me</button>
-    </form>
-    <a href="https://demo.shariadefi.app/" target="_blank" class="demo-btn">View Demo</a>
-    <div class="social">
-      <p>Follow us on X for updates:</p>
-      <a href="https://x.com/defimmy" target="_blank">@defimmy</a>
-    </div>
+    <h1>Launching Soon</h1>
+    <p>The first Shariah-compliant decentralized finance platform.<br/> Invest ethically. Stay transparent. Be part of the future of halal finance.</p>
+    
+    <a href="https://demo.shariadefi.app/" target="_blank" class="demo-btn">🚀 View Demo</a>
+
     <div class="footer">
       &copy; 2025 Sharia DeFi. All rights reserved.
     </div>
