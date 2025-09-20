@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharia DeFi - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #162447);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 700px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fca311;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        ul {
+            text-align: left;
+            margin: 20px auto;
+            padding: 0;
+            list-style-type: none;
+            max-width: 500px;
+        }
+        li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #fca311;
+        }
+        input[type="email"] {
+            padding: 12px;
+            width: 60%;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+        button, .demo-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            background-color: #fca311;
+            color: #1a1a2e;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        button:hover, .demo-btn:hover {
+            background-color: #e59400;
+        }
+        .social {
+            margin-top: 30px;
+        }
+        .social a {
+            color: #fca311;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social a:hover {
+            color: #e59400;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #aaa;
+        }
+        .demo-btn {
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sharia DeFi</h1>
+        <p>We are launching soon! Sharia DeFi is your trusted platform for Islamic-compliant decentralized finance.</p>
+        <p>Our platform helps Islamic investors navigate DeFi with confidence through:</p>
+        <ul>
+            <li>Real-time Shariah compliance scoring for DeFi protocols</li>
+            <li>Expert verification by Islamic finance scholars</li>
+            <li>Comprehensive interest-free and halal asset checks</li>
+            <li>Transparent risk assessment and historical tracking</li>
+        </ul>
+        <form action="#">
+            <input type="email" placeholder="Enter your email to get updates" required>
+            <button type="submit">Notify Me</button>
+        </form>
+        <a href="https://demo.shariadefi.app/" target="_blank" class="demo-btn">View Demo</a>
+        <div class="social">
+            <p>Follow us on X for updates:</p>
+            <a href="https://x.com/defimmy" target="_blank">@defimmy</a>
+        </div>
+        <div class="footer">
+            &copy; 2025 Sharia DeFi. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
