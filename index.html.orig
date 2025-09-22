@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sharia DeFi - Coming Soon - Navigate DeFi with Sharia Confidence</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #0f172a, #162447, #00a884, #d4af37);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Container with glassmorphism */
+    .container {
+      max-width: 800px;
+      padding: 50px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 25px;
+      box-shadow: 0 8px 40px rgba(0, 168, 132, 0.3);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      animation: floatContainer 6s ease-in-out infinite;
+    }
+
+    @keyframes floatContainer {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 180px;
+      margin: 0 auto 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Headline with modern gradient + shadow */
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #d4af37, #00a884, #00d4a9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+      letter-spacing: 1px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #d4af37, 0 0 20px #00a884;}
+      to { text-shadow: 0 0 20px #00a884, 0 0 30px #00d4a9; }
+    }
+
+    /* Paragraph */
+    p {
+      font-size: 20px;
+      margin-bottom: 35px;
+      line-height: 1.7;
+      color: #e0e7ff;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Button with gradient hover + scale */
+    .demo-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 18px 50px;
+      border-radius: 35px;
+      background: linear-gradient(135deg, #d4af37, #00a884);
+      color: #0f172a;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 20px;
+      transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+    }
+
+    .demo-btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.7);
+      background: linear-gradient(135deg, #00a884, #d4af37);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #cbd5e1;
+      letter-spacing: 0.5px;
+    }
+
+    /* Islamic motif particles */
+    .particle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      opacity: 0.7;
+      animation: floatParticle 12s linear infinite;
+      pointer-events: none;
+      background: rgba(212, 175, 55, 0.6);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Star shape */
+    }
+
+    .particle.crescent {
+      clip-path: ellipse(50% 50% at 50% 50%);
+      background: rgba(212, 175, 55, 0.5);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      animation: floatParticle 14s linear infinite;
+    }
+
+    @keyframes floatParticle {
+      0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-800px) translateX(200px) rotate(360deg); opacity: 0; }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Islamic motif particles -->
+  <div class="particle" style="left:15%; top:95%; animation-delay:0s;"></div>
+  <div class="particle crescent" style="left:40%; top:100%; animation-delay:2s;"></div>
+  <div class="particle" style="left:70%; top:90%; animation-delay:4s;"></div>
+  <div class="particle crescent" style="left:85%; top:95%; animation-delay:6s;"></div>
+
+  <div class="container">
+    <img src="shariadefi-logo.png" alt="Sharia DeFi Logo" class="logo"/>
+    <h1>Launching Soon</h1>
+    <p>
+      Navigate DeFi with Sharia confidence.<br/>
+      AI-powered compliance analysis and real-time scoring to keep your investments ethical and sharia compliant.<br/>
+      Starting with Solana — and expanding across the blockchain universe next.
+    </p>
+    
+    <a href="https://demo.shariadefi.app/" target="_blank" class="demo-btn">🚀 View Demo</a>
+
+    <div class="footer">
+      &copy; 2025 Sharia DeFi. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
